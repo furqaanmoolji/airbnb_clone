@@ -1,0 +1,166 @@
+/* src/index.css */
+
+/* Reset & base typography */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F7F7F7; /* light grey background */
+  color: #484848; /* Airbnb dark text */
+}
+
+/* Container to center content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header styling */
+.site-header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EBEBEB;
+}
+.site-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #484848;
+  margin: 0;
+}
+
+/* Hero section */
+.hero-title {
+  font-size: 2rem;
+  color: #484848;
+  margin-bottom: 0.5rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  color: #767676;
+  margin-top: 0;
+}
+
+/* Card component */
+.card {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+.card-header {
+  background: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 1px solid #EBEBEB;
+  font-weight: bold;
+  color: #484848;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-footer {
+  background: #FFFFFF;
+  padding: 1rem;
+  border-top: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+/* Form styling */
+form {
+  background: #FFFFFF;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #484848;
+}
+form input,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #EBEBEB;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #484848;
+  background-color: #FFFFFF;
+}
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #00A699; /* Airbnb teal focus */
+  box-shadow: 0 0 0 2px rgba(0,166,153,0.2);
+}
+form button {
+  background: #FF5A5F; /* Airbnb red */
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #E14C50;
+}
+form button:disabled {
+  background: #FFB3B5;
+  cursor: not-allowed;
+}
+
+/* Search bar styling */
+.search-bar {
+  background: #FFFFFF;
+  padding: 0.75rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 0.75rem;
+}
+.search-bar input,
+.search-bar select {
+  flex: 1;
+  min-width: 150px;
+}
+.search-bar button {
+  margin: 0 auto;
+}
+
+/* Responsive grid for listings */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Confirmation box */
+.confirmation {
+  background: #FFFFFF;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+.confirmation h1 {
+  margin-top: 0;
+  color: #FF5A5F;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mt-4 { margin-top: 1rem; }
